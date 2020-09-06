@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+gcc -I mruby/include \
+  -Werror \
+  -Os \
+  "$1".c \
+  mruby/build/host/lib/libmruby.a \
+  -o "$1"

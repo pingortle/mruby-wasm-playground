@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+em++ \
+  --bind \
+  -s ASSERTIONS=2 \
+  -s ERROR_ON_UNDEFINED_SYMBOLS=0 \
+  -Wall \
+  -pedantic \
+  -Os \
+  -std=c++11 \
+  -stdlib=libc++ \
+  -I mruby/include \
+  -o "$1".js \
+  -o "$1".html \
+  mruby/build/emscripten-full-core-cpp/lib/libmruby.a \
+  mruby/build/emscripten-full-core-cpp/lib/libmruby_core.a \
+  "$1".cpp

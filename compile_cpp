@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+clang++ -I mruby/include \
+  -v \
+  -Wall \
+  -pedantic \
+  -Os \
+  -std=c++11 \
+  -stdlib=libc++ \
+  mruby/build/host/lib/libmruby.a \
+  -o "$1" \
+  "$1".cpp

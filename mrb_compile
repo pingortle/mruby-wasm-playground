@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+mruby/bin/mrbc -o "$1".rb.c -B "$1" "$1".rb

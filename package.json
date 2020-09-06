@@ -1,0 +1,23 @@
+{
+  "name": "mruby-wasm-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "call_ruby.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pingortle/mruby-wasm-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pingortle/mruby-wasm-playground/issues"
+  },
+  "homepage": "https://github.com/pingortle/mruby-wasm-playground#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}

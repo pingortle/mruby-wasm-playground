@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <body>
+    <script src="./call_ruby.js"></script>
+    <script type="application/javascript">
+      Module.onRuntimeInitialized = onRuntimeInitialized
+
+      function onRuntimeInitialized() {
+        console.log(Module.callRuby('floo_bar(:blarb)'))
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+emcc -I mruby/include \
+  -s ASSERTIONS=2 \
+  -Werror \
+  -Os \
+  "$1".c \
+  mruby/build/emscripten-full-core/lib/libmruby.a \
+  -o "$1".js \
+  -o "$1".html
